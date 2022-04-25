@@ -1,26 +1,20 @@
-# torrent.sh
-a bash srcipt for pirate bays
+### How does this work?
 
-use torrent.sh a tool which search magnet links and stream it with webtorrent using pirate bays as a source
+This is a shell script. It scape pirate bays and get the magnet link.
+After this it use [webtorrent](https://github.com/webtorrent/webtorrent) to stream the video from magnet link.
+For scraping script use simple gnu utils like sed, awk, paste, cut.
 
+## Requirements
 
+* [webtorrent](https://github.com/webtorrent/webtorrent) - A tool to stream torrent. `sudo npm install webtorrent -g`
 
-How does this work?
-This is a shell script. It scape piratebays and get the magnet link. After this it use webtorrent to stream the video from magnet link. For scraping script use simple gnu utils like sed, awk, paste, cut.
+## Installation
 
-Requirements
-webtorrent - A tool to stream torrent. sudo npm install webtorrent -g
+### git
+git clone torrent.sh your system and give execute permissions.
 
-curl sudo apt install curl
-
-Installation
-
-give torrent.sh execute permissions.
-
+```sh
+$ git clone https://github.com/gincode18/torrent.sh
+$ cd torrent.sh
 $ sudo chmod +x torrent.sh
-
-then 
-./torrent.sh query
-
-
-To uninstall, simply delete torrent.sh 
+```
